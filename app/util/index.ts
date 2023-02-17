@@ -23,7 +23,7 @@ export const getPngData = async () => {
 export const getLocalData = async () => {
   const filePath = path.join(process.cwd(), "public/test.png");
   const data = fs.readFileSync(filePath);
-  return data;
+  return Buffer.from(data).toString("base64");
 };
 
 export { action } from "./action";
