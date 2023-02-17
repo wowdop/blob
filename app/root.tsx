@@ -14,6 +14,8 @@ export const meta: MetaFunction = () => ({
   viewport: "width=device-width,initial-scale=1",
 });
 
+export { action } from "./routes/index";
+
 export default function App() {
   return (
     <html lang="en">
